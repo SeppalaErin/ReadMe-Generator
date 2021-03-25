@@ -82,3 +82,38 @@ inquirer.prompt([
         message: questions[8]
     }
 ])
+
+.then(data => {
+    return fs.writeFileSync("README.md", genREADME(data));
+})
+
+.catch(err => {
+    if(err){throw err}
+})
+
+function genREADME(answers) {
+    return `# ${answers.title}
+## Table of Contents
+* Description
+* Installation
+* Usage
+* Contributions
+* Licensing
+* Tests
+* Questions
+## Description
+${answers.description}
+## Installation
+${answers.installation}
+## Usage
+${answers.usage}
+## Contributions
+${answers.contributions}
+## Licensing
+[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+## Tests
+${answers.tests}
+## Questions
+* My repositories can be found at https://www.github.com/${answers.username}
+* For any questions regarding this application, you can email me at ${answers.email}`;
+}
