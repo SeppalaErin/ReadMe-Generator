@@ -20,7 +20,7 @@ There were no external contributers to the application.
 ## Tests
 Users can test this application by opening their Integrated Terminal within the folder containing the cloned application. Within the terminal, enter "node script.js" in the command line. Afterwards, the user will be prompted a series of questions that will be used to generate their README.MD file.
 ## Questions
-* My repositories can be found at https://www.github.com/aseppala98
+* My repositories can be found at https://www.github.com/seppalaerin
 * For any questions regarding this application, you can email me at SeppalaErin98@gmail.com
 
 ![Gif of ReadMe-Generator](./Assets/ReadMe-Generator.gif)
